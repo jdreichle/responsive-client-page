@@ -1,0 +1,175 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url(https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+/*Navigation Bar*/
+
+.topNav{
+	background: linear-gradient(#A19278,#9D9074);
+	overflow: hidden;
+
+
+}
+
+.topNav a {
+	float: left;
+	width: 120px;
+	display: block;
+	text-align: center;
+	color: #fff;
+	padding: 40px 20px;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+
+}
+
+.topNav a:hover{
+	background: #808D90;
+	border-radius: 5px;
+}
+
+.searchContainer{
+	float: right;
+	margin-right: 20px;
+}
+
+input[type=text]{
+	padding: 6px;
+	margin-top: 30px;
+	font-size: 17px;
+	border: none;
+
+}
+
+button{
+	float: right;
+	padding: 6px 10px;
+	margin-top: 30px;
+	margin-right: 16px;
+	background: #808D90;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+}
+
+button:hover{
+	background: #939991;
+}
+
+/*Content columns rows flex*/
+
+.wrapper {
+	margin: 0px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  	width: 100%;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  text-align: center;
+  height: 100%; 
+  border-right: 1px solid white;
+  padding-right: 5px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;	
+  text-align: center;
+  height: 100%; 
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  text-align: center;
+  height: 100%; 
+  border-left: 1px solid white;
+  padding-left: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+
+.row:after {	
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*footer*/
+
+footer {
+  color: #fff;
+  background: #977349;
+  position: relative;
+  bottom: 0px;
+  padding: 65px 0 70px 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+}
+
+/*media breakpoints*/
+
+@media screen and (max-width:600px){
+	.topNav .searchContainer{
+		float: none;
+	}
+	.topNav a, input[type=text], button{
+		float: none;
+		display: block;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding: 14px;
+	}
+	input[type=text]{
+		border: 1px solid #ccc;
+	}
+	.searchContainer{
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+
+  footer  {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.container {
+  max-width: 940px;
+}
+
